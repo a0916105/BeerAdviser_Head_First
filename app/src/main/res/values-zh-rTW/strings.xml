@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beer Adviser</string>
+    <string name="find_beer">選擇啤酒</string>
+    <string name="brands">沒有啤酒被選擇</string>
+</resources>
