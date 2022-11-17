@@ -3,6 +3,7 @@ package tw.idv.jew.beeradviser
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,5 +14,8 @@ class MainActivity : AppCompatActivity() {
         findBeer.setOnClickListener {
 
         }
+
+        val brands = findViewById<TextView>(R.id.brands)
+        brands.text = "Gottle of geer"
     }
 }
