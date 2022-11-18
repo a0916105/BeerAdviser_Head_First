@@ -1,9 +1,10 @@
 package tw.idv.jew.beeradviser
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Spinner
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,10 +13,10 @@ class MainActivity : AppCompatActivity() {
 
         val findBeer = findViewById<Button>(R.id.find_beer)
         findBeer.setOnClickListener {
-
+            val beerColor = findViewById<Spinner>(R.id.beer_color)
+            val color = beerColor.selectedItem
+            val brands = findViewById<TextView>(R.id.brands)
+            brands.text = "${getString(R.string.beer_color_is)}$color"
         }
-
-        val brands = findViewById<TextView>(R.id.brands)
-        brands.text = "Gottle of geer"
     }
 }

@@ -3,6 +3,7 @@
     <string name="app_name">Beer Adviser</string>
     <string name="find_beer">選擇啤酒</string>
     <string name="brands">沒有啤酒被選擇</string>
+    <string name="beer_color_is">啤酒的顏色是</string>
 
     <string-array name="beer_colors">
         <item>淡色</item>
